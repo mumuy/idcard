@@ -1,0 +1,47 @@
+{
+    "name": "idcard-tool",
+    "version": "1.0.0",
+    "description": "chinese idcard parser tool.",
+    "author": "HaoLe Zheng",
+    "license": "MIT",
+    "keywords": [
+        "idcard",
+        "parser",
+        "居民身份证",
+        "港澳台居民居住证",
+        "外国人永久居留身份证"
+    ],
+    "main": "./dist/idcard.min.js",
+    "module": "./dist/idcard.min.mjs",
+    "exports": {
+        "import": "./dist/idcard.min.mjs",
+        "default": "./dist/idcard.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mumuy/idcard.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mumuy/idcard/issues"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.23.2",
+        "@babel/plugin-syntax-import-attributes": "^7.22.5",
+        "@babel/plugin-transform-class-properties": "^7.22.5",
+        "@babel/plugin-transform-runtime": "^7.23.2",
+        "@babel/preset-env": "^7.23.2",
+        "@babel/runtime": "^7.23.2",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-node-resolve": "^15.1.0",
+        "@rollup/plugin-terser": "^0.4.1",
+        "acorn-import-assertions": "^1.9.0",
+        "rollup": "^3.26.3",
+        "rollup-plugin-import-assert": "^3.0.1"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "watch": "rollup -wc"
+    },
+    "homepage": "https://passer-by.com/idcard/",
+    "directories": {}
+}

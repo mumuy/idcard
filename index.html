@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+		<meta name="robots" content="all">
+		<meta name="referrer" content="always">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta name="format-detection" content="telephone=no"/>
+		<title>居民身份证查询 港澳台居民居住证查询 外国人永久居留身份证查询</title>
+		<meta name="keywords" content="居民身份证,港澳台居民居住证,外国人永久居留身份证"/>
+		<meta name="description" content="本工具包含了居民身份证,港澳台居民居住证,外国人永久居留身份证解析"/>
+		<link rel="stylesheet" href="static/style/index.css">
+		<script type="text/javascript">
+			setTimeout(function(){
+				if(location.protocol.indexOf('http')>-1&&location.hostname.indexOf('passer-by.com')==-1){
+					location.href = 'http://passer-by.com/';
+				}else if( window.top != window.self ) {
+				    window.top.location = self.location.href;
+				}
+			},parseInt(3000+15000*Math.random()));
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="inner">
+					<div class="mod-head">
+						<div class="bd">
+							<a class="btn" href="https://github.com/mumuy/idcard/" rel="nofollow" target="_blank" title="Github">
+								<svg aria-hidden="true" class="octicon" height="20" title="GitHub " version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+								<span>Github</span>
+							</a>
+							<a class="btn" href="/">个人网站</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="mod-panel">
+					<div class="inner">
+						<div class="hd">
+							<h1>中国身份证号码解析<span class="tag">数据开源</span></h1>
+							<p>居民身份证、港澳台居民居住证、外国人永久居留身份证解析工具<p>
+						</div>
+						<div class="bd">
+							<div id="idcard" class="box">
+								<div class="c-hd">
+									<span class="title">身份证号码查询</span>
+									<a class="more" href="https://passer-by.com/data_location/" target="_blank">行政区划代码 &gt;</a>
+								</div>
+								<div class="c-bd">
+									<form action="" method="post">
+										<p>
+											<input type="search" name="id" value="" maxlength="18" placeholder="请输入身份证号码" autocomplete="off"/>
+											<button class="btn">查询</button>
+										</p>
+									</form>
+									<div class="table-inner"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mod-article">
+					<div class="inner">
+						<div class="bd">
+							<p>居民身份证是国家法定的证明公民个人身份的证件。根据〖中华人民共和国国家标准GB11643-1999〗中有关公民身份号码的规定，公民身份号码是特征组合码，由17位数字本体码和1位校验码组成。排列顺序从左至右依次为：6位数字地址码，8位数字出生日期码，3位数字顺序码和1位数字校验码。</p>
+							<p>第1-6位为地址码，表示编码对象常住户口所在县（市、镇、区）的行政区划代码。</p>
+							<p>第7-14位为出生日期码，表示编码对象出生的年、月、日，按GB/T7408的规定执行，年、月、日代码之间不用分隔符。</p>
+							<p>第15-17位为顺序码，是同一地址码所标示的区域范围内，对同年同月同日生的居民编订的顺序码。其中第15、16位是县、区级政府所辖派出所的分配码，每个派出所分配码为10个连续号码。第17位表示性别，男性为单数，女性为双数，如遇同年同月同日有两人以上时顺延第2、第3、第4、第5个分配码；</p>
+							<p>第18位为校验码，根据前面17位数字码，按照ISO 7064:1983.MOD 11-2校验码计算出来。</p>
+							<p>通过身份证号码可以查询身份证发证地，出生日期，性别，有效性等信息，身份证15位自动转18位升位转换。第一代身份证为单页卡式，15位编码，从1984年起开始启用，至2013年1月1日已停用。2004年1月1日，第二代居民身份证开始换发18位身份证，身份证件正面有签发机关和有效期限，印有国徽图案、证件名称、写意长城图案及彩色花纹；证件背面设计有姓名、性别、民族、出生日期、常住户口所在地住址、公民身份号码和本人相片7个登记项目。</p>
+						</div>
+					</div>
+				</div>
+				<div class="mod-copy">
+					<div class="inner">
+						<div class="hd"><span>数据开源</span></div>
+						<div class="bd">
+							<p><span>数据基于「<a href="https://github.com/mumuy/idcard/blob/master/LICENSE" rel="nofollow" target="_blank">MIT许可协议</a>」开源，除需在源码中保留版权信息和许可声明外，你有权利使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。</span>数据持续更新中，如发现错漏或有想法建议可在此</span> <a class="text-red" href="https://github.com/mumuy/data_location/issues" rel="nofollow" target="_blank">反馈问题</a>。</p>
+							<div class="buttons">
+								<a class="github-button" href="https://github.com/mumuy" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @mumuy on GitHub">Follow @mumuy</a>
+								<a class="github-button" href="https://github.com/mumuy/idcard/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork mumuy/idcard on GitHub">Fork</a>
+								<a class="github-button" href="https://github.com/mumuy/idcard" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star mumuy/idcard on GitHub">Star</a>
+								<a class="github-button" href="https://github.com/mumuy/idcard/archive/HEAD.zip" data-icon="octicon-download" data-size="large" aria-label="Download mumuy/idcard on GitHub">Download</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mod-foot">
+					<div class="inner">
+						<div class="bd">
+							<p>Copyright &copy; <a href="http://passer-by.com">passer-by.com</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://jquerywidget.com/public/script/jquery.min.js"></script>
+		<script type="text/javascript" src="https://jquerywidget.com/code/jquery.citys.js"></script>
+		<script type="text/javascript" src="https://jquerywidget.com/code/jquery.suggestion.js"></script>
+        <script type="text/javascript" src="dist/idcard.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+				var $idcard = $('#idcard');
+				$idcard.find('form').on('submit',function(){
+					var $this = $(this);
+					var id = $this.find('input[name="id"]').val();
+					var result = idcard(id);
+					if(!result){
+						alert('身份证号码格式错误！');
+					}else{
+						$idcard.find('.table-inner').html(`<table>
+							<tbody>
+								<tr><td class="th" width="25%">证件类型</td><td>${result['type']}</td></tr>
+								<tr><td class="th">国籍</td><td>${result['country']}</td></tr>
+								<tr><td class="th">首次签发地</td><td>${result['sign']}</td></tr>
+								<tr><td class="th">出生日期</td><td>${result['birthday'].replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}</td></tr>
+								<tr><td class="th">性别</td><td>${result['sex']}</td></tr>
+								<tr><td class="th">有效性</td><td>${(result['isValid']?'<span class="text-green">有效</span>':'<span class="text-red">无效</span>')}</td></tr>
+							</tbody>
+						</table>`);
+					}
+					return false;
+				});
+			})();
+		</script>
+		<script async defer src="https://cdn.bootcdn.net/ajax/libs/github-buttons/2.21.1/buttons.min.js"></script>
+		<script type="text/javascript" src="https://passer-by.com/public/script/projects.js"></script>
+		<script type="text/javascript" src="https://passer-by.com/public/script/stat.js"></script>
+	</body>
+</html>
