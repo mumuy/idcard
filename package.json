@@ -29,7 +29,7 @@
         "yarn": "please-use-npm",
         "npm": ">=8"
     },
-    "files":[
+    "files": [
         "dist"
     ],
     "devDependencies": {
@@ -40,6 +40,7 @@
         "@rollup/plugin-babel": "^6.0.4",
         "@rollup/plugin-node-resolve": "^15.3.0",
         "@rollup/plugin-terser": "^0.4.4",
+        "node-fetch": "^3.3.2",
         "rollup": "^3.29.5"
     },
     "scripts": {
