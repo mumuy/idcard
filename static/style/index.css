@@ -119,11 +119,11 @@ a:hover{
     box-shadow: 0 1px 5px 0 rgba(0,0,0,0.03);
 }
 .mod-panel .hd p {
-    margin-bottom: 10px;
     line-height: 26px;
     font-size: 15px;
 }
 .mod-panel .hd .buttons{
+    margin-top: 10px;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 6px;
