@@ -10,7 +10,7 @@ export function isValid(id){
     id17.split('').forEach(function(value,index){
         sum += factor[index]*value;
     });
-    let lastLetter = ["1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"];
+    let lastLetter = ["1", "0", "x", "9", "8", "7", "6", "5", "4", "3", "2"];
     let mod = sum%lastLetter.length;
     return lastLetter[mod]==last;
 };
