@@ -18,9 +18,9 @@ export function isValid(id){
 export function parserInternational(id){
     let result = {};
     result['type'] = '外国人永久居留身份证';
-    result['sign'] = _china[id.substring(1,3)+'0000']||'';
-    result['country'] = _international[id.substring(3,6)]||'无国籍';
-    result['birthday'] = id.substring(6,14).replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3');
+    result['sign'] = _china[id.slice(1,3)+'0000']||'';
+    result['country'] = _international[id.slice(3,6)]||'无国籍';
+    result['birthday'] = id.slice(6,14).replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3');
     result['sex'] = id.charAt(16)%2?'男':'女';
     result['isValid'] = isValid(id);
     return result;
@@ -28,7 +28,7 @@ export function parserInternational(id){
 
 export function parserChina(id){
     let result = {};
-    let code = id.substring(0,6);
+    let code = id.slice(0,6);
     let province_code = code.replace(/\d{4}$/,'0000');
     let city_code = code.replace(/\d{2}$/,'00');
     let district_code = code;
@@ -43,7 +43,7 @@ export function parserChina(id){
         result['sign'] = (_china[province_code]||'') + (province_code!=city_code?(_china[city_code]||''):'') + (city_code!=district_code?(_china[district_code]||''):'');
     }
     result['country'] = '中国';
-    result['birthday'] = id.substring(6,14).replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3');
+    result['birthday'] = id.slice(6,14).replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3');
     result['sex'] = id.charAt(16)%2?'男':'女';
     result['isValid'] = isValid(id);
     return result;
