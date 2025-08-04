@@ -1,6 +1,6 @@
 {
     "name": "idcard-tool",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "chinese idcard parser tool.",
     "author": "HaoLe Zheng",
     "license": "MIT",
