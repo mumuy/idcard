@@ -112,6 +112,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="mod-fixedbar">
+                    <div class="bd">
+                        <a class="gotop" href="javascript:;" rel="nofollow"><img src="static/image/gotop.png" width="24" height="24"></a>
+                    </div>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="https://jquerywidget.com/public/script/jquery.min.js"></script>
@@ -138,6 +143,26 @@
                         </table>`);
                     }
                     return false;
+                });
+            })();
+
+            // 底部滚动
+            (function(){
+                let timer = null;
+                let $gotop = document.querySelector('.mod-fixedbar .gotop');
+                $gotop.addEventListener('click',function(){
+                    cancelAnimationFrame(timer);
+                    let scrollTop = document.documentElement.scrollTop;
+                    let move = scrollTop/18;
+                    timer = requestAnimationFrame(function fn(){
+                        var oTop = document.documentElement.scrollTop;
+                        if(oTop > 0){
+                            document.documentElement.scrollTop = oTop - move;
+                            timer = requestAnimationFrame(fn);
+                        }else{
+                            cancelAnimationFrame(timer);
+                        }
+                    });
                 });
             })();
         </script>
