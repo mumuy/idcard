@@ -46,3 +46,21 @@ console.log(idcard('932682198501010017'));
         "isValid":true
     }
 ```
+
+```js
+var idcard = require("idcard-tool");
+
+// 统一社会信用代码
+console.log(idcard('91350200ABCDEFJHJX'));
+```
+
+#### 返回
+```js
+    {
+        "type":"统一社会信用代码",
+        "sign":"市场监管",
+        "organization":"企业",
+        "location":"厦门市",
+        "isValid":true
+    }
+```
