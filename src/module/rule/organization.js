@@ -12,10 +12,10 @@ export default {
         result['sign'] = _organization[sign_code]||'';
         result['organization'] = _organization[organization_code]||'';
         result['location'] = _china[district_code]||'';
-        result['isValid'] = this.isValcode(code);
+        result['isValid'] = this.isValid(code);
         return result;
     },
-    isValcode(code){
+    isValid(code){
         const values = {
             '0':0,
             '1':1,
@@ -51,7 +51,6 @@ export default {
         };  // 前17位字符值
         const weights = [1,3,9,27,19,26,16,17,20,29,25,13,8,24,10,30,28]; // 前17位权重
         const checkCodeMap = Object.keys(values);
-        code = code.toUpperCase();
         let sum = 0;
         for (let i = 0; i < 17; i++) {
             const char = code[i];
