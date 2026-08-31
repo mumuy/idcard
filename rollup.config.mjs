@@ -27,11 +27,11 @@ const localPath = 'src/module/data/china.js';
 
 const commonPlugins = [
     resolve(),
-    terser(),
     babel({
         babelHelpers: 'runtime',
         exclude:'node_modules/**'
     }),
+    terser(),
     fetchRemoteFile(remoteUrl, localPath)
 ];
 
